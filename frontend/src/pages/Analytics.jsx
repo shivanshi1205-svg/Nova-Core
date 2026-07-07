@@ -26,7 +26,7 @@ const Analytics = () => {
 
   useEffect(() => {
     if (user?.token) {
-      fetch('http://localhost:5000/api/ai/insights', {
+      fetch('https://nova-core-backend.onrender.com/api/ai/insights', {
         headers: { Authorization: `Bearer ${user.token}` }
       })
         .then(res => res.json())

@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-const API_URL = 'http://localhost:5000/api/projects';
+const API_URL = 'https://nova-core-backend.onrender.com/api/projects';
 
 const useProjectStore = create((set, get) => ({
   projects: [],
